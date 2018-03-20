@@ -17,7 +17,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart' show timeDilation;
 
-import 'package:zetory/presentation/ui/home.dart';
+import 'package:zetory/presentation/ui/navigation.dart';
 
 final ThemeData _kGalleryLightTheme = new ThemeData(
   brightness: Brightness.light,
@@ -46,7 +46,7 @@ class _ZetoryAppState extends State<ZetoryApp>
       title: 'Zetory',
       color: Colors.grey,
       theme: (_useLightTheme ? _kGalleryLightTheme : _kGalleryDarkTheme).copyWith(platform: TargetPlatform.iOS),
-      home: new HomePage(),
+      home: new AppNavigation(),
       showPerformanceOverlay: false,
     );
 
